@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veritabanını Kullan</title>
+</head>
+<body>
+    <h1>Veritabanını Kullan</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="db_name">Veritabanı Adı:</label>
+        <input type="text" id="db_name" name="db_name" required>
+        <button type="submit">Bağlan</button>
+    </form>
+
+    {% if success %}
+        <h2>{{ db_name }} veritabanına başarıyla bağlandınız!</h2>
+        <h3>Tablo Listesi:</h3>
+        <ul>
+            {% for table in tables %}
+                <li>{{ table.0 }}</li>
+            {% endfor %}
+        </ul>
+    {% elif error %}
+        <h2>Bağlantı başarısız: {{ error }}</h2>
+    {% endif %}
+</body>
+</html>

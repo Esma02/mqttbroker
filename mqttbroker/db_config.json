@@ -1,0 +1,26 @@
+{
+    "deneme": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "deneme",
+        "USER": "postgres",
+        "PASSWORD": "123",
+        "HOST": "localhost",
+        "PORT": "5432"
+    },
+    "esma": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "esma",
+        "USER": "postgres",
+        "PASSWORD": "123",
+        "HOST": "localhost",
+        "PORT": "5432"
+    },
+    "aa": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "aa",
+        "USER": "postgres",
+        "PASSWORD": "123",
+        "HOST": "localhost",
+        "PORT": "5432"
+    }
+}
