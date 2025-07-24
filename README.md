@@ -33,13 +33,21 @@ HTML / Bootstrap (arayüz için)
 
 📁 Dosya Yapısı
 broker/
+
 ├── admin.py              # Django admin konfigürasyonu
+
 ├── apps.py               # Uygulama yapılandırması
+
 ├── forms.py              # Tarih aralığı filtre formu
+
 ├── models.py             # Veritabanı modelleri
+
 ├── tests.py              # Test dosyası
+
 ├── urls.py               # URL yönlendirmeleri
+
 ├── views.py              # Tüm MQTT, veri işleme ve görselleştirme view’ları
+
 🧩 Veritabanı Modelleri
 BrokerConnection: MQTT bağlantı bilgilerini tutar.
 
