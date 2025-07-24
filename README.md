@@ -71,9 +71,15 @@ Geliştirme sunucusunu başlatın:
 python manage.py runserver
 🌐 Uygulama URL’leri
 URL	Açıklama
+
 /	Yeni tablo oluşturma (broker bilgisi girerek)
+
 /start_broker_connection/	Var olan tablo için MQTT bağlantısı başlat
+
 /stop_broker_connection/	MQTT bağlantısını durdur
+
 /show_table_data/	Verileri tablo halinde gösterir
+
 /filter_table/	Tarih aralığına göre veri filtreler
+
 /get_columns/<table>/	Tablonun sütun isimlerini getirir
